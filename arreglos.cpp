@@ -1,21 +1,23 @@
-#include<iostream>
+#include <bits/stdc++.h>
+
 using namespace std;
 
-int a,b; 
+int main(int argv, char* argc[]){
+	
+	int a[10], *b, *c;
+	for(int i=0 ; i<10 ; i++){
+		cin >> a[i]>> b[i];}
+	c=b;
 
-void swap(int* a, int* b)
-{
-	int v=*b;
-       	*b=*a;
-	*a=v;
+	vector<int> v(10);
+
+	for(int i=0 ; i<10 ; i++) v[i] = a[i];
+	v.clear();
+	v.assign(10, 0);
+
+	v.push_back(10);
+	v.size(); //devolver unsigned int
+
+	return 0;
+
 }
-
-int main()
-{
-	int arreglo[10] = {1,2,3,4,5,6,7,8,9,10}; //[0][1][2][3][4][5][6][7][8][9]
-	cout<<"Antes del swap: "<<arreglo[0]<<"   "<<arreglo[9]<<endl;
-
-	swap(&arreglo[0],&arreglo[9]);
-
-	cout<<"Despues del swap: "<<arreglo[0]<<"    "<<arreglo[9];
-}	
